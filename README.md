@@ -16,8 +16,7 @@
  * [盛水最多的容器](./topics/盛水最多的容器.md) 
  * [最长无重复子串](./topics/最长无重复子串.md) 
  * [最小覆盖子串](./topics/最小覆盖子串.md) 
-## 树 
-<img width="20%" height="15%" src="https://github.com/RynnLee/rynn-code-master/blob/master/pics/tree-type.png"/>
+## [树](./pics/tree-type.png)
 二叉树遍历
 
  * [先序非递归](./topics/tree/先序非递归.md)
