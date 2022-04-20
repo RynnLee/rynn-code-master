@@ -30,6 +30,7 @@
  * [最小路径和](./topics/dp/最小路径和.md)
  * [不同路径II](./topics/dp/不同路径II.md)
  * [最长回文子串](./topics/dp/最长回文子串.md)
+ * [零钱兑换](./topics/dp/零钱兑换.md)
  
  
  ## 回溯&剪枝
@@ -46,5 +47,16 @@
  * [先序非递归](./topics/tree/先序非递归.md)
  * [中序非递归](./topics/tree/中序非递归.md) 
  * [后序非递归](./topics/tree/后序非递归.md) 
- * [层序遍历](./topics/tree/二叉树的层序遍历.md) 
+ * [层序遍历](./topics/tree/二叉树的层序遍历.md)
+ 
+ 树的其他问题
+    
+    树的其他问题通常用到递归，递归方法的参数和方法定义是思路的关键。
+ * [路径总和II](topics/tree/路径总和II.md)
+ * [求根节点到叶节点数字之和](topics/tree/根节点到叶节点数字之和.md)
+ * [最大路径和](topics/tree/最大路径和.md)
+ 
+ 
+  DFS搜索
+  * [岛屿数量](topics/岛屿数量.md)
   
