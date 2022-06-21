@@ -8,6 +8,7 @@
 * 大O表示法 
 
     这张图很重要，复杂度高一个级别差别是天壤之别。
+    O(logN) 和 O(1)是如此接近。
     
     <img width="45%" height="30%" src="https://github.com/RynnLee/rynn-code-master/blob/master/pics/big-o.png"/>
 
