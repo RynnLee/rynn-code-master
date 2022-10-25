@@ -63,4 +63,7 @@
   DFS搜索
   * [岛屿数量](topics/岛屿数量.md)
   * [子集](topics/子集.md)
+  * [获取目录文件](topics/获取目录文件.md)
   
+## 其他
+  * [计算24点](topics/count24.md)
