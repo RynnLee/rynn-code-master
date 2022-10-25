@@ -61,7 +61,7 @@ func count24(slc [4]int) []string {
 				tmpSlc = tmpSlc[:len(tmpSlc)-1]
 				tmpStrSlc = tmpStrSlc[:len(tmpStrSlc)-1]
 
-				if nums[j] != 0 {
+				if nums[j] != 0 && nums[i]%nums[j] == 0 {
 					tmpSlc = append(tmpSlc, nums[i]/nums[j])
 					tmpStr = fmt.Sprintf("%s/%s", numStrs[i], numStrs[j])
 					tmpStrSlc = append(tmpStrSlc, tmpStr)
@@ -77,7 +77,7 @@ func count24(slc [4]int) []string {
 				tmpSlc = tmpSlc[:len(tmpSlc)-1]
 				tmpStrSlc = tmpStrSlc[:len(tmpStrSlc)-1]
 
-				if nums[i] != 0 {
+				if nums[i] != 0 && nums[j]%nums[i] == 0 {
 					tmpSlc = append(tmpSlc, nums[j]/nums[i])
 					tmpStr = fmt.Sprintf("%s/%s", numStrs[j], numStrs[i])
 					tmpStrSlc = append(tmpStrSlc, tmpStr)
