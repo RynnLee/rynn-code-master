@@ -60,7 +60,7 @@ func count24(slc [4]int) []string {
 				f24(tmpSlc, tmpStrSlc)
 				tmpSlc = tmpSlc[:len(tmpSlc)-1]
 				tmpStrSlc = tmpStrSlc[:len(tmpStrSlc)-1]
-
+				// 因为是穷举，有很多重复的解。 所有不计算 nums[i]%nums[j] != 0 肯定不会漏
 				if nums[j] != 0 && nums[i]%nums[j] == 0 {
 					tmpSlc = append(tmpSlc, nums[i]/nums[j])
 					tmpStr = fmt.Sprintf("%s/%s", numStrs[i], numStrs[j])
