@@ -1,7 +1,6 @@
 计算24点
 
-    还记得小时候计算24点的小游戏吗，4张牌，没张只能使用一次，加减乘除得到24
-
+    还记得小时候计算24点的小游戏吗，4张牌，每张只能使用一次，可以使用括号，加减乘除得到24. (转载请注明出处，谢谢)
 
 #### 思路
     4张牌中任意2张，加减乘除得到一个数；那么现在就有3个数，依次类推，直到只剩1个数，判断这个数是否是24点
@@ -31,6 +30,7 @@ func count24(slc [4]int) []string {
 				tmpSlc := make([]int, 0, len(nums)-1)
 				tmpStrSlc := make([]string, 0, len(nums)-1)
 				tmpStr := ""
+				// 任意取2个数据，剩余的数放入下一次递归计算中
 				for k := 0; k < len(nums); k++ {
 					if k == i || k == j {
 						continue
@@ -39,6 +39,7 @@ func count24(slc [4]int) []string {
 					tmpStrSlc = append(tmpStrSlc, numStrs[k])
 				}
 				tmpSlc = append(tmpSlc, nums[i]+nums[j])
+				// 记录表达式
 				tmpStr = fmt.Sprintf("(%s+%s)", numStrs[i], numStrs[j])
 				tmpStrSlc = append(tmpStrSlc, tmpStr)
 				f24(tmpSlc, tmpStrSlc)
